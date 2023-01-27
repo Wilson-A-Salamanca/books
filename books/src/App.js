@@ -4,9 +4,14 @@ import BookCreate from "./components/BookCreate";
 function App() {
   const [books, setbooks] = useState([]);
 
-  return (
+  const createBook = (title) => {
+    //prueba
+    setbooks(title);
+  };
+
+  return (  
     <div>
-      <BookCreate />
+      <BookCreate onCreate={createBook}/>
     </div>
   );
 }
