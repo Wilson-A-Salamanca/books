@@ -14,13 +14,13 @@ function BookCreate({onCreate}) {
     };
 
     return (
-        <div>
+        <section>
             <form onSubmit={handleSumit}>
                 <label>Title</label>
                 <input value={title} onChange={handleChange}></input>
                 <button>Create</button>
             </form>
-        </div>
+        </section>
     )
 };
 
