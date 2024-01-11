@@ -14,10 +14,10 @@ function BookEdit({book, onSumit}) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="book-edit" onSubmit={handleSubmit}>
             <label>Title</label>
-            <input value={title} onChange={handleChange}/>
-            <button>save</button>
+            <input className="input" value={title} onChange={handleChange}/>
+            <button className="button is-primary">save</button>
         </form>
     )
 };

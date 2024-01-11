@@ -4,7 +4,7 @@ function BookList({books, onDelete, onEdit}) {
     const redenredBooks = books.map((book) => {
         return <BookShow onEdit={onEdit} onDelete={onDelete} key={book.id} book={book}/>;
     });
-    return <div>{redenredBooks}</div>
+    return <div className="book-list">{redenredBooks}</div>
 }
 
 export default BookList;

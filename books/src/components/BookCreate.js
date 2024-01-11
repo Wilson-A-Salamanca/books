@@ -14,11 +14,12 @@ function BookCreate({onCreate}) {
     };
 
     return (
-        <section>
+        <section className="book-create">
+            <h3>Add a book</h3>
             <form onSubmit={handleSumit}>
                 <label>Title</label>
-                <input value={title} onChange={handleChange}></input>
-                <button>Create</button>
+                <input className="input" value={title} onChange={handleChange}></input>
+                <button className="button" >Create</button>
             </form>
         </section>
     )
